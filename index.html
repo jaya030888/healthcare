@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiti Social Welfare Society - Healthcare with Dignity</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Amiti Social Welfare Society works to build a gender-equitable, healthy society through preventive healthcare, women's empowerment, and community-rooted livelihoods in Bhopal and Sehore.">
+    <meta name="keywords"
+        content="Amiti Welfare, NGO Bhopal, Women Healthcare, Preventive Healthcare, NGO Darpan, 80G Tax Exemption, India Social Welfare">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Progress Bar (for scroll indicator / loading) -->
+    <div id="progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="logo-area" onclick="navigateTo('home')">
+                <img src="images/amiti_logo.png" alt="Amiti Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Amiti</span>
+                    <span class="logo-subtitle">Social Welfare Society</span>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12" class="line-mid"></line>
+                    <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+                    <line x1="3" y1="18" x2="21" y2="18" class="line-bot"></line>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#about" class="nav-link" onclick="navigateTo('about')">About Us</a></li>
+                    <li><a href="#programmes" class="nav-link" onclick="navigateTo('programmes')">Programmes</a></li>
+                    <li><a href="#get-involved" class="nav-link" onclick="navigateTo('get-involved')">Get Involved</a>
+                    </li>
+                    <li><a href="#contact" class="nav-link" onclick="navigateTo('contact')">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="lang-btn" id="lang-btn" aria-label="Switch Language">हिंदी</button>
+                <button class="btn-donate-now" onclick="openModal('donate-modal')">Donate Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN APP CONTAINER FOR SPA SECTIONS -->
+    <main class="app-content">
+
+        <!-- 1. HOMEPAGE VIEW -->
+        <section id="home-view" class="page-view active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-container">
+                    <div class="hero-text-content">
+                        <span class="trust-badge">BHOPAL • MADHYA PRADESH • SINCE 2008</span>
+                        <h1 class="hero-heading">Healthcare with Dignity. <br><span class="highlight-text">Women at the
+                                Centre.</span></h1>
+                        <p class="hero-subheading">Amiti Social Welfare Society works to build a gender-equitable,
+                            healthy society through preventive healthcare, women's empowerment, and community-rooted
+                            livelihoods.</p>
+
+                        <div class="hero-ctas">
+                            <button class="btn-primary" onclick="navigateTo('get-involved')">Support Our Work
+                                &rarr;</button>
+                            <button class="btn-secondary" onclick="navigateTo('about')">Learn About Us</button>
+                        </div>
+
+                        <div class="hero-trust-cards">
+                            <div class="trust-card-item sdg-3-card">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 12h3l3-9 4 17 3-11 3 3h3"></path>
+                                    </svg>
+                                </div>
+                                <div class="card-text">
+                                    <strong class="card-title">SDG 3</strong>
+                                    <span class="card-desc">Good Health & Well-being</span>
+                                </div>
+                            </div>
+                            <div class="trust-card-item sdg-5-card">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="9" r="5"></circle>
+                                        <line x1="12" y1="14" x2="12" y2="21"></line>
+                                        <line x1="9" y1="18" x2="15" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div class="card-text">
+                                    <strong class="card-title">SDG 5</strong>
+                                    <span class="card-desc">Gender Equality</span>
+                                </div>
+                            </div>
+                            <div class="trust-card-item cert-card">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        <polyline points="9 11 11 13 15 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="card-text">
+                                    <strong class="card-title">80G Certified</strong>
+                                    <span class="card-desc">Tax Exemption Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual-content">
+                        <div class="hero-img-wrapper">
+                            <div class="dot-grid dot-grid-tr"></div>
+                            <img src="images/amiti_hero.png" alt="Amiti Community Healthcare in Action"
+                                class="hero-main-img">
+                            <div class="dot-grid dot-grid-br"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impact Statistics Bar (Directly below Hero) -->
+            <section class="stats-section">
+                <div class="container stats-container">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="counter" data-target="500">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-desc">Health Camps Conducted</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="counter" data-target="50000">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-desc">Patients Screened & Benefited</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="counter" data-target="200">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-desc">Active Volunteers & Professionals</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span class="counter" data-target="7">0</span><span class="stat-label-inline"> Yrs</span>
+                        </div>
+                        <p class="stat-desc">Daily Meals at Cancer Hospital</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Preview Section -->
+            <section class="about-preview-section">
+                <div class="container about-preview-container">
+                    <div class="about-preview-left">
+                        <span class="section-tag">WHO WE ARE</span>
+                        <h2>A People-First Organisation</h2>
+                        <p class="lead-text">Registered in 2008, Amiti Social Welfare Society is a non-profit committed
+                            to preventive and promotive healthcare — especially for women, adolescents, and underserved
+                            communities in Bhopal and Sehore.</p>
+                        <p>We hold 12A, 80G registrations, and CSR Form-1 certification, enabling fully tax-exempt
+                            donations and corporate partnership structures designed for transparency and measurable
+                            community ownership.</p>
+                        <button class="btn-text" onclick="navigateTo('about')">Read Our Story &rarr;</button>
+                    </div>
+                    <div class="about-preview-right">
+                        <div class="mission-vision-compact">
+                            <div class="compact-card vision">
+                                <div class="compact-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg>
+                                </div>
+                                <div class="compact-card-text">
+                                    <h3>Our Vision</h3>
+                                    <p>A gender-equitable, healthy society where women can access healthcare, live with
+                                        dignity, and participate fully.</p>
+                                </div>
+                            </div>
+                            <div class="compact-card mission">
+                                <div class="compact-card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="compact-card-text">
+                                    <h3>Our Mission</h3>
+                                    <p>To strengthen preventive care, empower women with knowledge, and build
+                                        sustainable women-led social enterprises.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Work (Programs Overview) -->
+            <section class="work-section">
+                <div class="container">
+                    <div class="section-header-centered">
+                        <span class="section-tag">WHAT WE DO</span>
+                        <h2>Our Four Core Pillars</h2>
+                        <p class="section-subtitle">We design and execute programs that address critical vulnerabilities
+                            in healthcare, nutrition, and livelihood security.</p>
+                    </div>
+
+                    <div class="program-grid">
+                        <!-- Healthcare -->
+                        <div class="program-card-interactive" onclick="navigateToProgram('healthcare')">
+                            <div class="program-card-img">
+                                <img src="images/healthcare_program.png" alt="Healthcare Program">
+                            </div>
+                            <div class="program-card-info">
+                                <div class="program-pillar-num">01</div>
+                                <h3>Healthcare</h3>
+                                <p>Structured primary checkup camps, eye screenings, and mobile clinical services in
+                                    remote areas.</p>
+                                <span class="learn-more-link">Explore Projects &rarr;</span>
+                            </div>
+                        </div>
+                        <!-- Women Empowerment -->
+                        <div class="program-card-interactive" onclick="navigateToProgram('women')">
+                            <div class="program-card-img">
+                                <img src="images/women_program.png" alt="Women Empowerment Program">
+                            </div>
+                            <div class="program-card-info">
+                                <div class="program-pillar-num">02</div>
+                                <h3>Women Empowerment</h3>
+                                <p>Reproductive health literacy, adolescent awareness sessions, and sanitary napkin
+                                    distribution drives.</p>
+                                <span class="learn-more-link">Explore Projects &rarr;</span>
+                            </div>
+                        </div>
+                        <!-- Nutrition -->
+                        <div class="program-card-interactive" onclick="navigateToProgram('nutrition')">
+                            <div class="program-card-img">
+                                <img src="images/nutrition_program.png" alt="Nutrition Program">
+                            </div>
+                            <div class="program-card-info">
+                                <div class="program-pillar-num">03</div>
+                                <h3>Nutrition & Dignity</h3>
+                                <p>Continuous hot-meal services for cancer patients and low-income families at local
+                                    hospitals.</p>
+                                <span class="learn-more-link">Explore Projects &rarr;</span>
+                            </div>
+                        </div>
+                        <!-- Community Development -->
+                        <div class="program-card-interactive" onclick="navigateToProgram('community')">
+                            <div class="program-card-img">
+                                <img src="images/community_program.png" alt="Community Development Program">
+                            </div>
+                            <div class="program-card-info">
+                                <div class="program-pillar-num">04</div>
+                                <h3>Community Welfare</h3>
+                                <p>Disaster relief support, seasonal winter clothing drives, and vocational training
+                                    initiatives.</p>
+                                <span class="learn-more-link">Explore Projects &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Projects (Limit to 3) -->
+            <section class="featured-projects-section">
+                <div class="container">
+                    <div class="section-header-centered">
+                        <span class="section-tag">CASE IN FOCUS</span>
+                        <h2>Featured Initiatives</h2>
+                        <p class="section-subtitle">Real, measurable projects running actively under our core program
+                            areas.</p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Project 1: Swasthya Bharat -->
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="images/healthcare_program.png" alt="Swasthya Bharat Camps">
+                                <span class="project-tag-badge">Healthcare</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Swasthya Bharat Camps</h3>
+                                <p class="project-desc">Diagnostic health camps running across school systems and
+                                    orphanages in Bhopal district. Facilitating early detection, basic screening, and
+                                    free distribution of medicine.</p>
+                                <div class="project-metric">
+                                    <span class="metric-val">50+</span>
+                                    <span class="metric-lbl">Camps Run Annually</span>
+                                </div>
+                                <button class="btn-secondary btn-full"
+                                    onclick="openProjectDetails('swasthya-bharat')">View Project Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Sarva Mangal Bhojan -->
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="images/nutrition_program.png" alt="Sarva Mangal Bhojan">
+                                <span class="project-tag-badge">Nutrition</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Sarva Mangal Bhojan</h3>
+                                <p class="project-desc">A continuous, 7-year initiative serving nutritious, hot meals to
+                                    cancer patients and their caregiving family members at the Cancer Hospital in
+                                    Bhopal.</p>
+                                <div class="project-metric">
+                                    <span class="metric-val">7 Yrs</span>
+                                    <span class="metric-lbl">Continuous Service</span>
+                                </div>
+                                <button class="btn-secondary btn-full"
+                                    onclick="openProjectDetails('sarva-mangal-bhojan')">View Project Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Samman Campaign -->
+                        <div class="project-card">
+                            <div class="project-card-image">
+                                <img src="images/community_program.png" alt="Samman Campaign">
+                                <span class="project-tag-badge">Community</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3>Samman Campaign</h3>
+                                <p class="project-desc">Providing winter wear, footwear, blankets, and essential dry
+                                    rations to under-resourced families during economic vulnerabilities and seasonal
+                                    shifts.</p>
+                                <div class="project-metric">
+                                    <span class="metric-val">10k+</span>
+                                    <span class="metric-lbl">Kits Distributed</span>
+                                </div>
+                                <button class="btn-secondary btn-full"
+                                    onclick="openProjectDetails('samman-campaign')">View Project Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center-cta">
+                        <button class="btn-primary" onclick="navigateTo('programmes')">View All Projects &rarr;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Success Stories (Testimonials) -->
+            <section class="testimonials-section">
+                <div class="container">
+                    <div class="section-header-centered">
+                        <span class="section-tag">OUR IMPACT</span>
+                        <h2>Voices of the Community</h2>
+                        <p class="section-subtitle">Real stories of change, dignity, and empowerment from our field
+                            operations.</p>
+                    </div>
+
+                    <div class="testimonials-slider-container">
+                        <div class="testimonials-wrapper" id="testimonials-wrapper">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-quote-icon">&ldquo;</div>
+                                <p class="testimonial-text">"Before Amiti set up the health camp in our neighborhood, I
+                                    had no access to regular eye examinations. They diagnosed my early-stage cataract
+                                    and facilitated my surgery for free. Today, my vision is fully restored."</p>
+                                <div class="testimonial-author">
+                                    <h4 class="author-name">Rukmani Bai</h4>
+                                    <span class="author-role">Beneficiary, Sehore District</span>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-quote-icon">&ldquo;</div>
+                                <p class="testimonial-text">"For low-income families traveling to Bhopal for cancer
+                                    treatment, managing food is a huge economic stress. The meals provided by the Sarva
+                                    Mangal Bhojan project let us focus entirely on my son's recovery."</p>
+                                <div class="testimonial-author">
+                                    <h4 class="author-name">Deepak Sharma</h4>
+                                    <span class="author-role">Caregiver at Cancer Hospital</span>
+                                </div>
+                            </div>
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-quote-icon">&ldquo;</div>
+                                <p class="testimonial-text">"Attending the school health seminars organised by Amiti
+                                    helped my classmates and me understand menstrual health and personal hygiene. It
+                                    removed the awkwardness and fear we used to hold."</p>
+                                <div class="testimonial-author">
+                                    <h4 class="author-name">Anjali Verma</h4>
+                                    <span class="author-role">Student, Lal Ghati School</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev-btn" id="prev-testi"
+                                aria-label="Previous Story">&larr;</button>
+                            <div class="slider-dots" id="slider-dots"></div>
+                            <button class="slider-btn next-btn" id="next-testi" aria-label="Next Story">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners and Trust Seals -->
+            <section class="partners-section">
+                <div class="container">
+                    <div class="partners-title">Supported By & Associated With</div>
+                    <div class="partners-carousel">
+                        <div class="partners-track">
+                            <div class="partner-logo"><span>Bhopal District Health Dept</span></div>
+                            <div class="partner-logo"><span>Sheroes Collective</span></div>
+                            <div class="partner-logo"><span>Rotary Club Bhopal</span></div>
+                            <div class="partner-logo"><span>State Social Welfare Board</span></div>
+                            <div class="partner-logo"><span>Bhopal Hospital Network</span></div>
+                            <div class="partner-logo"><span>Bhopal District Health Dept</span></div>
+                            <div class="partner-logo"><span>Sheroes Collective</span></div>
+                            <div class="partner-logo"><span>Rotary Club Bhopal</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Media Gallery Preview -->
+            <section class="gallery-section">
+                <div class="container">
+                    <div class="section-header-centered">
+                        <span class="section-tag">GALLERY</span>
+                        <h2>Moments from the Field</h2>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/healthcare_program.png" alt="Health camp checkups">
+                            <div class="gallery-caption">Health Camp, Bhopal</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/women_program.png" alt="Adolescent workshop">
+                            <div class="gallery-caption">Hygiene Seminar</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/nutrition_program.png" alt="Meals program">
+                            <div class="gallery-caption">Meals Distribution</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/community_program.png" alt="Volunteers in action">
+                            <div class="gallery-caption">Winter Relief Drive</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <div class="container">
+                    <div class="video-container-card">
+                        <div class="video-info">
+                            <span class="section-tag light">VIDEO DOCUMENTARY</span>
+                            <h2>How We Build Livelihoods & Lifestyles</h2>
+                            <p>Watch this brief documentary highlighting our 15-year journey, our volunteers, and the
+                                lives impacted through grassroots preventive health camps.</p>
+                            <button class="btn-primary" onclick="openModal('video-modal')">Play Documentary</button>
+                        </div>
+                        <div class="video-thumbnail-placeholder" onclick="openModal('video-modal')">
+                            <div class="play-button-overlay">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get Involved (CTA Banner) -->
+            <section class="get-involved-cta-section">
+                <div class="container">
+                    <div class="cta-banner-card">
+                        <h2>Be Part of the Change</h2>
+                        <p>Whether through donation, volunteering, or partnership — every single form of support creates
+                            a healthier, more dignified society.</p>
+                        <div class="cta-banner-buttons">
+                            <button class="btn-primary btn-white" onclick="openModal('donate-modal')">Donate
+                                Now</button>
+                            <button class="btn-secondary btn-outline-white"
+                                onclick="navigateTo('get-involved')">Volunteer With Us</button>
+                            <button class="btn-secondary btn-outline-white" onclick="navigateTo('contact')">Partner With
+                                Us</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- 2. ABOUT PAGE VIEW -->
+        <section id="about-view" class="page-view">
+            <div class="container page-content-container">
+                <div class="page-header">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h1>Our Story & Mission</h1>
+                </div>
+
+                <!-- Story Block -->
+                <div class="story-grid">
+                    <div class="story-text">
+                        <h2 class="sub-section-title">Serving Bhopal & Sehore Since 2008</h2>
+                        <p>Established under the Madhya Pradesh Societies Registration Act, Amiti Social Welfare Society
+                            was founded with a singular, resolute objective: to bridge the vast health disparities faced
+                            by women and adolescents in under-resourced rural and urban communities.</p>
+                        <p>Over the last 15 years, our operational footprint has expanded across three districts,
+                            powered by a committed volunteer network of over 200 health professionals, social workers,
+                            and local changemakers. We work hand-in-hand with municipal and state agencies to align our
+                            projects directly with the UN Sustainable Development Goals (SDG 3: Good Health & Well-being
+                            and SDG 5: Gender Equality).</p>
+                        <p>We believe that healthcare is not just a clinical service; it is a fundamental pillar of
+                            human dignity and self-determination. By centering women at the heart of our community
+                            initiatives, we cultivate lasting health ownership at the grassroots level.</p>
+                    </div>
+                    <div class="story-side-card">
+                        <div class="credentials-card">
+                            <h3>Official Registrations</h3>
+                            <ul class="credentials-list">
+                                <li>
+                                    <strong>NGO Darpan Unique ID:</strong>
+                                    <span>MP/2008/00029312</span>
+                                </li>
+                                <li>
+                                    <strong>Registration Number:</strong>
+                                    <span>01/01/01/19322/08</span>
+                                </li>
+                                <li>
+                                    <strong>12A Status:</strong>
+                                    <span>Registered (Tax-Exempt Foundation)</span>
+                                </li>
+                                <li>
+                                    <strong>80G Certification:</strong>
+                                    <span>Approved (Tax Exemption on Donations)</span>
+                                </li>
+                                <li>
+                                    <strong>CSR Form-1 (MCA):</strong>
+                                    <span>Registered for Corporate Partnerships</span>
+                                </li>
+                            </ul>
+                            <div class="sdg-badge-container">
+                                <div class="sdg-badge badge-sdg3">
+                                    <div class="sdg-num">3</div>
+                                    <div class="sdg-name">Good Health</div>
+                                </div>
+                                <div class="sdg-badge badge-sdg5">
+                                    <div class="sdg-num">5</div>
+                                    <div class="sdg-name">Gender Equality</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission, Vision & Core Values -->
+                <div class="mission-vision-detailed">
+                    <div class="detailed-card vision">
+                        <div class="card-icon-header">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            <h3>Our Vision</h3>
+                        </div>
+                        <p>A gender-equitable, healthy society where every individual — especially women and adolescent
+                            girls — can access preventive healthcare, live with dignity, and participate fully in social
+                            and economic life.</p>
+                    </div>
+                    <div class="detailed-card mission">
+                        <div class="card-icon-header">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            <h3>Our Mission</h3>
+                        </div>
+                        <p>To strengthen community-based preventive healthcare, empower women with knowledge and agency,
+                            and build sustainable, women-led social enterprises in convergence with national programmes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="values-section">
+                    <h2 class="sub-section-title text-center">Our Core Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h4>Dignity & Equity</h4>
+                            <p>Ensuring respectful, high-quality attention to every individual, regardless of their
+                                gender, socio-economic background, or caste.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Grassroots Action</h4>
+                            <p>Deploying solutions that are built and led by local community members to foster
+                                self-reliance and trust.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Scientific Integrity</h4>
+                            <p>Partnering with medical professionals to ensure that all advice, screenings, and drugs
+                                distributed are clinically verified.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Complete Transparency</h4>
+                            <p>Sharing our financial records, audits, and annual status reports openly with our
+                                partners, stakeholders, and donors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Timeline / Journey Since 2008 -->
+                <div class="timeline-section">
+                    <h2 class="sub-section-title text-center">Our Journey Timeline</h2>
+                    <p class="timeline-subtitle text-center">A path of consistent, trust-driven growth and commitment.
+                    </p>
+
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-item left active">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2008</div>
+                                <h4>Inception & Foundation</h4>
+                                <p>Amiti was registered under the M.P. Societies Registration Act. We launched our first
+                                    primary healthcare camp in the Lal Ghati area with local volunteers.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2012</div>
+                                <h4>Expanding to Sehore</h4>
+                                <p>We conducted our 50th health camp and officially set up diagnostic channels for rural
+                                    districts, focusing heavily on primary checks for adolescent girls.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2017</div>
+                                <h4>Sarva Mangal Bhojan Launched</h4>
+                                <p>Seeing the nutrition challenges of hospital patients, we launched a continuous daily
+                                    meal drive for cancer patients at Bhopal's main hospital.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2020</div>
+                                <h4>Pandemic Response & Sanitisation</h4>
+                                <p>Shifted resources to COVID-19 relief. Distributed hygiene kits, ran vaccination
+                                    awareness drives, and deployed emergency dry rations.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-year">2024</div>
+                                <h4>15+ Years & MCA CSR Form-1</h4>
+                                <p>Obtained CSR Form-1 registration. Successfully screened 50,000+ patients across
+                                    Bhopal, Sehore, and Rajgarh districts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Team -->
+                <div class="team-section">
+                    <h2 class="sub-section-title text-center">Our Leadership & Team</h2>
+                    <p class="team-subtitle text-center">The team driving Amiti's projects on the ground.</p>
+
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <span class="avatar-placeholder">SD</span>
+                            </div>
+                            <h4>Dr. Shalini Dixit</h4>
+                            <span class="team-role">Founder & Executive Director</span>
+                            <p class="team-bio">18+ years of experience in rural community health and social policy
+                                across Madhya Pradesh.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <span class="avatar-placeholder">PK</span>
+                            </div>
+                            <h4>Praveen Kumar</h4>
+                            <span class="team-role">Programme Head</span>
+                            <p class="team-bio">Manages partnerships, corporate CSR relations, and operational logistics
+                                for remote health camps.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <span class="avatar-placeholder">AJ</span>
+                            </div>
+                            <h4>Dr. Anisha Joshi</h4>
+                            <span class="team-role">Health & Medical Coordinator</span>
+                            <p class="team-bio">Coordinates visiting doctors, diagnostic equipment setups, and free
+                                pharmaceutical distribution.</p>
+                        </div>
+                        <div class="team-card">
+                            <div class="team-avatar">
+                                <span class="avatar-placeholder">RM</span>
+                            </div>
+                            <h4>Rekha Mishra</h4>
+                            <span class="team-role">Community Liaison & Outreach</span>
+                            <p class="team-bio">Bridges local self-help groups and rural women to organize grassroot
+                                mobilization.</p>
+                        </div>
+                    </div>
+                    <p class="team-footer-text">Backed by <strong>190+ volunteers</strong>, student interns, medical
+                        assistants, and nursing students across Bhopal and Sehore.</p>
+                </div>
+
+                <!-- Awards & Recognition / Annual Reports -->
+                <div class="reports-awards-grid">
+                    <div class="awards-box">
+                        <h3>Awards & Recognition</h3>
+                        <ul class="awards-list">
+                            <li>
+                                <span class="award-year">2022</span>
+                                <strong>Bhopal Civic Pride Award</strong>
+                                <span>Recognized by the municipal department for consistent nutrition work during
+                                    lockdowns.</span>
+                            </li>
+                            <li>
+                                <span class="award-year">2018</span>
+                                <strong>Aditya Birla Grassroots Shield</strong>
+                                <span>Awarded for impactful rural preventive health models.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reports-box">
+                        <h3>Transparency Reports</h3>
+                        <p>We publish our verified audits and program reports openly. Download our recent filings below:
+                        </p>
+                        <div class="report-downloads">
+                            <a href="#" class="report-dl-btn" onclick="simulateDownload('Annual Report 2023-24')">
+                                <span class="dl-icon">&#11015;</span>
+                                <div class="dl-text">
+                                    <strong>Annual Report 2023-24</strong>
+                                    <span>PDF (3.2 MB)</span>
+                                </div>
+                            </a>
+                            <a href="#" class="report-dl-btn"
+                                onclick="simulateDownload('Audited Financial Statement 2023-24')">
+                                <span class="dl-icon">&#11015;</span>
+                                <div class="dl-text">
+                                    <strong>Audited Financials 2023-24</strong>
+                                    <span>PDF (1.8 MB)</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Goals -->
+                <div class="future-goals-box">
+                    <h3>Future Goals (2026-28)</h3>
+                    <div class="goals-grid">
+                        <div class="goal-item">
+                            <span class="goal-num">01</span>
+                            <h4>Mobile Clinic Van</h4>
+                            <p>Acquiring and deploying a custom medical van to reach deep forest-villages in Sehore
+                                district weekly.</p>
+                        </div>
+                        <div class="goal-item">
+                            <span class="goal-num">02</span>
+                            <h4>MENSES Center</h4>
+                            <p>Setting up permanent, safe spaces in schools for adolescent sanitary counselling and
+                                supply distribution.</p>
+                        </div>
+                        <div class="goal-item">
+                            <span class="goal-num">03</span>
+                            <h4>Livelihood Linking</h4>
+                            <p>Training self-help groups in sanitary napkin packaging and basic health check assistant
+                                roles.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 3. PROGRAMMES PAGE VIEW -->
+        <section id="programmes-view" class="page-view">
+            <div class="container page-content-container">
+                <div class="page-header">
+                    <span class="section-tag">OUR WORK IN DEPTH</span>
+                    <h1>Programmes & Projects</h1>
+                    <p class="section-lead-subtitle">Explore our operational programs and specific local projects that
+                        drive impact.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="filter-tabs-wrapper">
+                    <button class="filter-tab active" data-filter="all">All Projects</button>
+                    <button class="filter-tab" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-tab" data-filter="women">Women Empowerment</button>
+                    <button class="filter-tab" data-filter="nutrition">Nutrition & Dignity</button>
+                    <button class="filter-tab" data-filter="community">Community Welfare</button>
+                </div>
+
+                <!-- Projects Catalog Grid -->
+                <div class="projects-catalog-grid" id="projects-catalog">
+
+                    <!-- 1. Swasthya Bharat -->
+                    <div class="catalog-project-card" data-category="healthcare">
+                        <div class="cat-card-img">
+                            <img src="images/healthcare_program.png" alt="Swasthya Bharat Camps">
+                            <span class="cat-tag tag-healthcare">Healthcare</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>Swasthya Bharat Camps</h3>
+                            <span class="cat-parent-program">Program: Healthcare Services</span>
+                            <p>Providing diagnostic checks (blood pressure, diabetes, blood test, pediatric reviews) and
+                                distribution of basic multivitamins, iron tablets, and paracetamol.</p>
+
+                            <div class="project-highlights">
+                                <strong>Key Impact Outcomes:</strong>
+                                <ul>
+                                    <li>500+ camps conducted since 2008</li>
+                                    <li>Medicines distributed to 30,000+ individuals</li>
+                                    <li>Early referrals for complex cardiac cases</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-secondary btn-sm"
+                                    onclick="openProjectDetails('swasthya-bharat')">Project Brief</button>
+                                <span class="cat-location">Bhopal & Sehore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Mobile Health Clinic -->
+                    <div class="catalog-project-card" data-category="healthcare">
+                        <div class="cat-card-img">
+                            <img src="images/healthcare_program.png" alt="Mobile Health Unit">
+                            <span class="cat-tag tag-healthcare">Healthcare</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>Mobile Medical Clinic</h3>
+                            <span class="cat-parent-program">Program: Healthcare Services</span>
+                            <p>A roving weekly clinical program delivering essential health checkups directly to
+                                underserved village communities with no medical centers.</p>
+
+                            <div class="project-highlights">
+                                <strong>Key Impact Outcomes:</strong>
+                                <ul>
+                                    <li>Weekly visits to 12 rural pockets</li>
+                                    <li>Pre-natal and post-natal care support</li>
+                                    <li>Over-the-counter medicine dispensary</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-secondary btn-sm"
+                                    onclick="openProjectDetails('mobile-clinic')">Project Brief</button>
+                                <span class="cat-location">Sehore rural</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Eye Care Camp -->
+                    <div class="catalog-project-card" data-category="healthcare">
+                        <div class="cat-card-img">
+                            <img src="images/healthcare_program.png" alt="Eye Screenings">
+                            <span class="cat-tag tag-healthcare">Healthcare</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>Vision & Eye Care Camps</h3>
+                            <span class="cat-parent-program">Program: Healthcare Services</span>
+                            <p>Organizing refraction checkups, distributing spectacles, and facilitating tie-ups with
+                                district hospitals for cataract surgeries.</p>
+
+                            <div class="project-highlights">
+                                <strong>Key Impact Outcomes:</strong>
+                                <ul>
+                                    <li>5,000+ patients screened for refractive errors</li>
+                                    <li>1,200+ free glasses distributed</li>
+                                    <li>240+ successful cataract surgery referrals</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-secondary btn-sm" onclick="openProjectDetails('eye-camp')">Project
+                                    Brief</button>
+                                <span class="cat-location">Bhopal Slums</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. The MENSES Project -->
+                    <div class="catalog-project-card" data-category="women">
+                        <div class="cat-card-img">
+                            <img src="images/women_program.png" alt="The MENSES Project">
+                            <span class="cat-tag tag-women">Women Empowerment</span>
+                            <span class="upcoming-flag">UPCOMING FLAGSHIP</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>The MENSES Initiative</h3>
+                            <span class="cat-parent-program">Program: Women's Health & Rights</span>
+                            <p>Our upcoming flagship program centering on menstrual health literacy, reproductive
+                                hygiene, and setting up pad-dispensing machines in government schools.</p>
+
+                            <div class="project-highlights">
+                                <strong>Target Goals (2026-27):</strong>
+                                <ul>
+                                    <li>Equip 25 government schools with sanitary machines</li>
+                                    <li>Counselling sessions for 5,000+ adolescent girls</li>
+                                    <li>Sustainable, biodegradable hygiene product distribution</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-primary btn-sm" onclick="openModal('menses-modal')">Express
+                                    Interest</button>
+                                <span class="cat-location">Bhopal & Sehore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Sarva Mangal Bhojan -->
+                    <div class="catalog-project-card" data-category="nutrition">
+                        <div class="cat-card-img">
+                            <img src="images/nutrition_program.png" alt="Cancer hospital meals">
+                            <span class="cat-tag tag-nutrition">Nutrition & Dignity</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>Sarva Mangal Bhojan</h3>
+                            <span class="cat-parent-program">Program: Nutrition Welfare</span>
+                            <p>Daily hot meals containing healthy grains, pulses, and clean water prepared by our
+                                volunteers, specifically serving low-income cancer patients and their care-takers.</p>
+
+                            <div class="project-highlights">
+                                <strong>Key Impact Outcomes:</strong>
+                                <ul>
+                                    <li>7+ continuous years of daily meals</li>
+                                    <li>Over 200,000+ warm meals distributed</li>
+                                    <li>Direct nutritional support for chemotherapy patients</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-secondary btn-sm"
+                                    onclick="openProjectDetails('sarva-mangal-bhojan')">Project Brief</button>
+                                <span class="cat-location">Bhopal Cancer Hospital</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Samman Campaign -->
+                    <div class="catalog-project-card" data-category="community">
+                        <div class="cat-card-img">
+                            <img src="images/community_program.png" alt="Relief Distribution">
+                            <span class="cat-tag tag-community">Community Welfare</span>
+                        </div>
+                        <div class="cat-card-body">
+                            <h3>Samman Campaign</h3>
+                            <span class="cat-parent-program">Program: Social Welfare & Relief</span>
+                            <p>Distribution of seasonal clothes, winter sweaters for children, hygiene essentials, and
+                                footwear to low-income tribal hamlets and urban brick-kiln laborers.</p>
+
+                            <div class="project-highlights">
+                                <strong>Key Impact Outcomes:</strong>
+                                <ul>
+                                    <li>Annual winter relief kits to 2,000 families</li>
+                                    <li>Blankets and safety shoes distributed</li>
+                                    <li>Relief support during local flash floods</li>
+                                </ul>
+                            </div>
+                            <div class="cat-card-footer">
+                                <button class="btn-secondary btn-sm"
+                                    onclick="openProjectDetails('samman-campaign')">Project Brief</button>
+                                <span class="cat-location">Districts Wide</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Case Studies & Photo Gallery -->
+                <div class="program-outcomes-section">
+                    <h2 class="sub-section-title text-center">Measurable Program Outcomes</h2>
+                    <div class="outcomes-stats">
+                        <div class="outcome-stat-box">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Communities Served</span>
+                        </div>
+                        <div class="outcome-stat-box">
+                            <span class="stat-number">20k+</span>
+                            <span class="stat-label">Medicines Distributed</span>
+                        </div>
+                        <div class="outcome-stat-box">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Estimated Lives Impacted</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 4. GET INVOLVED PAGE VIEW -->
+        <section id="get-involved-view" class="page-view">
+            <div class="container page-content-container">
+                <div class="page-header">
+                    <span class="section-tag">JOIN THE WORK</span>
+                    <h1>Every Form of Support Matters</h1>
+                    <p class="section-lead-subtitle">We welcome donors, volunteers, CSR partners, and institutional
+                        collaborations to build a healthier society.</p>
+                </div>
+
+                <!-- Four Tracks Grid -->
+                <div class="support-tracks-grid">
+
+                    <!-- Track 1: Donate -->
+                    <div class="support-track-card donate-accent">
+                        <div class="track-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Donate Now</h3>
+                        <p>Directly fund diagnostic healthcare camps, essential medicines distribution, and hospital
+                            hot-meal operations. Donations are eligible for tax deductions under section 80G.</p>
+                        <div class="track-checkmark">
+                            <span class="check-icon">&#10003;</span>
+                            <span>80G Tax Exemption Available</span>
+                        </div>
+                        <button class="btn-primary btn-full" onclick="openModal('donate-modal')">Process
+                            Donation</button>
+                    </div>
+
+                    <!-- Track 2: Volunteer -->
+                    <div class="support-track-card volunteer-accent">
+                        <div class="track-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Join a community of 200+ doctors, nurses, student helpers, and local managers. Lend your
+                            professional skills, clinic time, or social media expertise.</p>
+                        <div class="track-checkmark">
+                            <span class="check-icon">&#10003;</span>
+                            <span>Open to All Backgrounds</span>
+                        </div>
+                        <button class="btn-secondary btn-full" onclick="openModal('volunteer-modal')">Apply to
+                            Volunteer</button>
+                    </div>
+
+                    <!-- Track 3: Corporate CSR -->
+                    <div class="support-track-card csr-accent">
+                        <div class="track-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3>CSR & Institutional</h3>
+                        <p>Designed for corporate foundations, public boards, and healthcare companies. We offer project
+                            audits, structured reporting, and full CSR Form-1 compliance.</p>
+                        <div class="track-checkmark">
+                            <span class="check-icon">&#10003;</span>
+                            <span>CSR Form-1 Registered</span>
+                        </div>
+                        <button class="btn-secondary btn-full" onclick="openModal('partner-modal')">Get in
+                            Touch</button>
+                    </div>
+
+                    <!-- Track 4: Brief & Reports -->
+                    <div class="support-track-card reports-accent">
+                        <div class="track-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Programme Briefs</h3>
+                        <p>Learn more about our methodology, budget distribution, case studies, and compliance filings
+                            through our compiled booklet.</p>
+                        <div class="track-checkmark">
+                            <span class="check-icon">&#10003;</span>
+                            <span>Downloadable Summary Book</span>
+                        </div>
+                        <button class="btn-secondary btn-full"
+                            onclick="simulateDownload('Amiti Programme Brief 2024')">Download Brief</button>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Quick Donation Form -->
+                <div class="interactive-donate-panel">
+                    <div class="donate-panel-info">
+                        <h3>Quick Contribution Calculator</h3>
+                        <p>Select or type an amount to see exactly how your donation transforms into field-level
+                            resources.</p>
+
+                        <div class="amount-selectors">
+                            <button class="amount-btn active" data-amount="1500">&#8377; 1,500</button>
+                            <button class="amount-btn" data-amount="3000">&#8377; 3,000</button>
+                            <button class="amount-btn" data-amount="7500">&#8377; 7,500</button>
+                            <button class="amount-btn" data-amount="15000">&#8377; 15,000</button>
+                            <div class="custom-amount-input">
+                                <span class="rupee-symbol">&#8377;</span>
+                                <input type="number" id="custom-donation-amount" placeholder="Custom" min="100">
+                            </div>
+                        </div>
+
+                        <div class="calculation-result-box">
+                            <h4 id="calc-headline">Your donation of &#8377; 1,500 will fund:</h4>
+                            <p id="calc-description">Medical screening, basic blood pressure monitoring, and general
+                                medicines for 15 children at a village school health camp.</p>
+                        </div>
+
+                        <button class="btn-primary" onclick="openQuickDonationPayment()">Proceed to Support</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 5. CONTACT PAGE VIEW -->
+        <section id="contact-view" class="page-view">
+            <div class="container page-content-container">
+                <div class="page-header">
+                    <span class="section-tag">REACH US</span>
+                    <h1>Contact Amiti</h1>
+                    <p class="section-lead-subtitle">We would love to hear from you. Get in touch directly, send a
+                        message, or visit our office.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Panel -->
+                    <div class="contact-details-panel">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Registered Address</h3>
+                                <p>D-1, C Sector, Vijay Nagar, Lal Ghati,<br>Bhopal – 462030, Madhya Pradesh, India</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Email Address</h3>
+                                <p><a href="mailto:amitisocialwelfare@gmail.com">amitisocialwelfare@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Social Media</h3>
+                                <p>Follow us on <a href="#" onclick="return false">Instagram</a>, <a href="#"
+                                        onclick="return false">Facebook</a>, & <a href="#"
+                                        onclick="return false">LinkedIn</a></p>
+                            </div>
+                        </div>
+
+                        <div class="partnership-enquiry-card">
+                            <h4>Partnership & CSR Enquiries</h4>
+                            <p>We welcome queries regarding institutional grant designs, diagnostic clinic equipment
+                                sponsorships, and CSR pilot projects. We can prepare and submit detailed project
+                                proposal drafts within 5 business days.</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Panel -->
+                    <div class="contact-form-panel">
+                        <h2>Send a Message</h2>
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name</label>
+                                    <input type="text" id="contact-name" required placeholder="Dr. / Mr. / Ms. Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address</label>
+                                    <input type="email" id="contact-email" required placeholder="email@address.com">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-org">Organisation (optional)</label>
+                                    <input type="text" id="contact-org" placeholder="Company / Institution Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-purpose">Purpose</label>
+                                    <select id="contact-purpose" required>
+                                        <option value="" disabled selected>— Select Option —</option>
+                                        <option value="donation">Donation Inquiry / Receipt Issue</option>
+                                        <option value="volunteer">Volunteer Application / Query</option>
+                                        <option value="csr">Corporate CSR Partnership</option>
+                                        <option value="media">Media & Press Relations</option>
+                                        <option value="other">General / Other Message</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" rows="6" required
+                                    placeholder="Tell us how you would like to collaborate..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Embedded Map Placeholder (Styled cleanly with CSS) -->
+                <div class="map-placeholder-section">
+                    <h3>Office Location</h3>
+                    <div class="simulated-map">
+                        <div class="map-marker-pin"></div>
+                        <div class="map-tooltip">
+                            <strong>Amiti Social Welfare Society</strong>
+                            <span>Vijay Nagar, Lal Ghati, Bhopal</span>
+                        </div>
+                        <div class="map-coordinates">Coordinates: 23.2843° N, 77.3629° E</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="images/amiti_logo.png" alt="Amiti Logo" class="logo-img">
+                    <span>Amiti</span>
+                </div>
+                <p class="footer-desc">Building a gender-equitable, healthy society — one community at a time.</p>
+                <div class="footer-certification-seal">
+                    <span>12A & 80G Tax Exemption Certified</span>
+                    <span>NGO Darpan Registered</span>
+                </div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#about" onclick="navigateTo('about')">About Us</a></li>
+                    <li><a href="#programmes" onclick="navigateTo('programmes')">Programmes & Projects</a></li>
+                    <li><a href="#get-involved" onclick="navigateTo('get-involved')">Get Involved</a></li>
+                    <li><a href="#contact" onclick="navigateTo('contact')">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col registry-col">
+                <h3>Registrations</h3>
+                <ul class="footer-registrations">
+                    <li><strong>Reg. No:</strong> 01/01/01/19322/08</li>
+                    <li><strong>M.P. Societies Reg. Act:</strong> 1973</li>
+                    <li><strong>NGO Darpan:</strong> MP/2008/00029312</li>
+                    <li><strong>Income Tax Act:</strong> 12A & 80G Certified</li>
+                    <li><strong>Ministry of Corporate Affairs:</strong> CSR Form-1</li>
+                </ul>
+            </div>
+
+            <div class="footer-col sdg-col">
+                <h3>SDG Alignment</h3>
+                <div class="sdg-footer-pills">
+                    <div class="sdg-footer-pill pill-sdg3">
+                        <strong>SDG 3</strong>
+                        <span>Good Health & Well-being</span>
+                    </div>
+                    <div class="sdg-footer-pill pill-sdg5">
+                        <strong>SDG 5</strong>
+                        <span>Gender Equality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Amiti Social Welfare Society. All rights reserved.</p>
+                <p>Designed with care for grassroots community impact.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL WINDOWS ==================== -->
+
+    <!-- 1. Donate Modal -->
+    <div class="modal-overlay" id="donate-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('donate-modal')">&times;</button>
+            <div class="modal-header">
+                <h2>Support Amiti</h2>
+                <p>Your contribution directly funds life-saving preventive health camps and daily nutrition programs.
+                    All donations are 100% tax-exempt under Section 80G.</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-grid">
+                    <div class="modal-form-side">
+                        <form id="donation-modal-form" onsubmit="handleDonationSubmit(event)">
+                            <div class="form-group">
+                                <label for="donate-amount">Donation Amount (INR)</label>
+                                <input type="number" id="donate-amount" required min="100" value="1500">
+                            </div>
+                            <div class="form-group">
+                                <label for="donate-name">Full Name</label>
+                                <input type="text" id="donate-name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="donate-pan">PAN Number (Required for 80G tax receipt)</label>
+                                <input type="text" id="donate-pan" placeholder="ABCDE1234F"
+                                    pattern="[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}" style="text-transform: uppercase;">
+                            </div>
+                            <div class="form-group">
+                                <label for="donate-email">Email Address</label>
+                                <input type="email" id="donate-email" required placeholder="name@email.com">
+                            </div>
+                            <button type="submit" class="btn-primary btn-full">Generate QR Code / Payment
+                                details</button>
+                        </form>
+                    </div>
+                    <div class="modal-payment-side">
+                        <div class="qr-container-box">
+                            <h4>Direct UPI & Bank Transfer</h4>
+                            <div class="simulated-qr">
+                                <div class="qr-code-img">
+                                    <!-- Simple SVG QR simulation -->
+                                    <svg width="120" height="120" viewBox="0 0 100 100" fill="currentColor">
+                                        <rect x="0" y="0" width="30" height="30"></rect>
+                                        <rect x="5" y="5" width="20" height="20" fill="white"></rect>
+                                        <rect x="10" y="10" width="10" height="10"></rect>
+
+                                        <rect x="70" y="0" width="30" height="30"></rect>
+                                        <rect x="75" y="5" width="20" height="20" fill="white"></rect>
+                                        <rect x="80" y="10" width="10" height="10"></rect>
+
+                                        <rect x="0" y="70" width="30" height="30"></rect>
+                                        <rect x="5" y="75" width="20" height="20" fill="white"></rect>
+                                        <rect x="10" y="80" width="10" height="10"></rect>
+
+                                        <rect x="40" y="40" width="20" height="20"></rect>
+                                        <rect x="45" y="45" width="10" height="10" fill="white"></rect>
+
+                                        <rect x="40" y="10" width="15" height="5"></rect>
+                                        <rect x="80" y="45" width="10" height="15"></rect>
+                                        <rect x="10" y="45" width="15" height="5"></rect>
+                                        <rect x="45" y="80" width="15" height="10"></rect>
+                                    </svg>
+                                </div>
+                                <span class="upi-id-label">amitisocialwelfare@upi</span>
+                            </div>
+                            <div class="bank-details-box">
+                                <h5>Direct Bank Wire Transfer</h5>
+                                <p><strong>Bank:</strong> State Bank of India<br>
+                                    <strong>Account Name:</strong> Amiti Social Welfare Society<br>
+                                    <strong>Account No:</strong> 39820199201<br>
+                                    <strong>IFSC Code:</strong> SBIN0003290
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Volunteer Modal -->
+    <div class="modal-overlay" id="volunteer-modal">
+        <div class="modal-content modal-narrow">
+            <button class="modal-close" onclick="closeModal('volunteer-modal')">&times;</button>
+            <div class="modal-header">
+                <h2>Join Our Volunteer Network</h2>
+                <p>Lend your time, professional medical skill, or community passion. We hold volunteer briefings on the
+                    first Saturday of every month.</p>
+            </div>
+            <div class="modal-body">
+                <form id="volunteer-modal-form" onsubmit="handleVolunteerSubmit(event)">
+                    <div class="form-group">
+                        <label for="vol-name">Full Name</label>
+                        <input type="text" id="vol-name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-phone">Phone Number</label>
+                        <input type="tel" id="vol-phone" required placeholder="98765 43210">
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-skill">Primary Specialty / Background</label>
+                        <select id="vol-skill" required>
+                            <option value="" disabled selected>— Select Specialty —</option>
+                            <option value="doctor">Medical Professional (Doctor / Specialist)</option>
+                            <option value="nurse">Nurse / Medical Student</option>
+                            <option value="social-work">Social Work / Counseling</option>
+                            <option value="student">Student / General Volunteer</option>
+                            <option value="corporate">Corporate Volunteer / Media Manager</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vol-message">Why do you want to volunteer with Amiti?</label>
+                        <textarea id="vol-message" rows="4" placeholder="Briefly share your motivations..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Partner Modal -->
+    <div class="modal-overlay" id="partner-modal">
+        <div class="modal-content modal-narrow">
+            <button class="modal-close" onclick="closeModal('partner-modal')">&times;</button>
+            <div class="modal-header">
+                <h2>Corporate CSR & Partnerships</h2>
+                <p>Initiate a co-designed CSR healthcare program or clinical equipment support pilot in Bhopal or Sehore
+                    district.</p>
+            </div>
+            <div class="modal-body">
+                <form id="partner-modal-form" onsubmit="handlePartnerSubmit(event)">
+                    <div class="form-group">
+                        <label for="part-company">Company / Institution Name</label>
+                        <input type="text" id="part-company" required placeholder="e.g. Acme Foundation">
+                    </div>
+                    <div class="form-group">
+                        <label for="part-contact">Contact Person</label>
+                        <input type="text" id="part-contact" required placeholder="Your Name & Designation">
+                    </div>
+                    <div class="form-group">
+                        <label for="part-email">Corporate Email Address</label>
+                        <input type="email" id="part-email" required placeholder="name@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="part-area">Target Area of Sponsorship</label>
+                        <select id="part-area" required>
+                            <option value="" disabled selected>— Select Option —</option>
+                            <option value="diagnostic-camp">Funding 10 Diagnostic Camps (Bhopal/Sehore)</option>
+                            <option value="nutrition-meals">Sarva Mangal Bhojan Yearly Kitchen Support</option>
+                            <option value="menses-initiative">The MENSES Initiative Sanitary Dispenser Sponsor</option>
+                            <option value="mobile-van">Sponsoring a Mobile Medical Checkup Van</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Submit Partnership Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Video Modal -->
+    <div class="modal-overlay" id="video-modal">
+        <div class="modal-content modal-video-width">
+            <button class="modal-close white-close" onclick="closeModal('video-modal')">&times;</button>
+            <div class="modal-body video-modal-body">
+                <!-- Clean interactive video simulator representing documentary -->
+                <div class="simulated-video-player">
+                    <div class="video-overlay-details">
+                        <h4>Amiti Social Welfare Society - 15 Year Retrospective</h4>
+                        <p>A short film on healthcare with dignity in Bhopal and Sehore.</p>
+                    </div>
+                    <div class="video-control-center">
+                        <span class="video-time-indicator">0:00 / 4:12</span>
+                        <div class="video-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <div class="video-progress-line">
+                            <div class="video-progress-filled"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. MENSES Project Express Interest Modal -->
+    <div class="modal-overlay" id="menses-modal">
+        <div class="modal-content modal-narrow">
+            <button class="modal-close" onclick="closeModal('menses-modal')">&times;</button>
+            <div class="modal-header">
+                <h2>Express Interest: MENSES Project</h2>
+                <p>Register as a supporter, donor, or school partner for our upcoming flagship menstrual hygiene
+                    initiative starting in late 2026.</p>
+            </div>
+            <div class="modal-body">
+                <form id="menses-modal-form" onsubmit="handleMensesSubmit(event)">
+                    <div class="form-group">
+                        <label for="men-name">Your Name</label>
+                        <input type="text" id="men-name" required placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="men-role">Your Role / Interest Type</label>
+                        <select id="men-role" required>
+                            <option value="" disabled selected>— Select Role —</option>
+                            <option value="school-rep">Government / Private School Representative</option>
+                            <option value="doctor-advisor">Medical Advisor / Gynaecologist</option>
+                            <option value="donor">Individual / CSR Donor</option>
+                            <option value="field-volunteer">Field Coordinator / Volunteer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="men-contact">Email / Mobile No</label>
+                        <input type="text" id="men-contact" required placeholder="email@address.com or phone">
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Register Interest</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Generic Project Details Modal -->
+    <div class="modal-overlay" id="project-detail-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project-detail-modal')">&times;</button>
+            <div class="modal-header">
+                <span class="project-modal-category badge" id="modal-project-category">Category</span>
+                <h2 id="modal-project-title">Project Title</h2>
+                <p class="modal-project-subtitle" id="modal-project-subtitle">Program Area</p>
+            </div>
+            <div class="modal-body">
+                <div class="project-modal-details-grid">
+                    <div class="proj-details-text">
+                        <h3>Detailed Description</h3>
+                        <p id="modal-project-desc">Project details go here.</p>
+                        <h3>Outcomes & Key Performance Indicators</h3>
+                        <div id="modal-project-outcomes">Outcomes list.</div>
+                    </div>
+                    <div class="proj-details-metrics-panel">
+                        <div class="modal-metric-card">
+                            <span class="m-val" id="modal-metric-1-val">Value</span>
+                            <span class="m-lbl" id="modal-metric-1-lbl">Label</span>
+                        </div>
+                        <div class="modal-metric-card">
+                            <span class="m-val" id="modal-metric-2-val">Value</span>
+                            <span class="m-lbl" id="modal-metric-2-lbl">Label</span>
+                        </div>
+                        <div class="modal-cta-box">
+                            <h4>Directly support this project</h4>
+                            <button class="btn-primary btn-full"
+                                onclick="closeModal('project-detail-modal'); openModal('donate-modal')">Donate to this
+                                Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification (Popup for Success feedbacks) -->
+    <div id="toast-notification" class="toast">
+        <div class="toast-content">
+            <span class="toast-icon">&#10004;</span>
+            <div class="toast-message">
+                <strong id="toast-title">Success!</strong>
+                <span id="toast-text">Message successfully transmitted.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
