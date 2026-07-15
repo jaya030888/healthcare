@@ -3208,6 +3208,11 @@ select:focus {
         grid-template-columns: 1fr;
     }
 
+    .outcomes-stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
     .interactive-donate-panel {
         padding: 30px 20px;
     }
