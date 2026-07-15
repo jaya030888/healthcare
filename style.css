@@ -3133,6 +3133,17 @@ select:focus {
 
 /* Mobile viewports */
 @media (max-width: 768px) {
+    /* Keep page content comfortably inset from phone edges. */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .hero-heading {
         font-size: 2.2rem;
     }
@@ -3271,7 +3282,60 @@ select:focus {
     }
 
     .container {
-        padding: 0 16px;
+        padding: 0 20px;
+    }
+
+    /* Gallery and documentary are designed to stack cleanly on touch screens. */
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 4 / 5;
+    }
+
+    .gallery-caption {
+        opacity: 1;
+        transform: none;
+        padding: 28px 12px 12px;
+        font-size: 0.85rem;
+    }
+
+    .video-container-card {
+        grid-template-columns: 1fr;
+        border-radius: 18px;
+    }
+
+    .video-info {
+        padding: 32px 24px;
+    }
+
+    .video-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+    }
+
+    .video-info p {
+        margin-bottom: 24px;
+    }
+
+    .video-info .btn-primary {
+        width: 100%;
+    }
+
+    .video-thumbnail-placeholder {
+        min-height: 240px;
+    }
+
+    .play-button-overlay {
+        width: 64px;
+        height: 64px;
+    }
+
+    .play-button-overlay svg {
+        width: 38px;
+        height: 38px;
     }
 
     .cta-banner-card {
@@ -3285,6 +3349,23 @@ select:focus {
 
 /* Mobile Extra-Small Viewports */
 @media (max-width: 480px) {
+    .gallery-grid {
+        gap: 12px;
+    }
+
+    .gallery-caption {
+        font-size: 0.78rem;
+        padding: 24px 10px 10px;
+    }
+
+    .video-info {
+        padding: 28px 20px;
+    }
+
+    .video-thumbnail-placeholder {
+        min-height: 210px;
+    }
+
     .hero-ctas {
         flex-direction: column;
         gap: 12px;
@@ -4025,4 +4106,4 @@ select:focus {
 
 
 
-
+
