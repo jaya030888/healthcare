@@ -571,7 +571,7 @@ function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Lock background scrolling
+        document.body.style.overflowY = 'hidden'; // Lock background scrolling
     }
 }
 
@@ -579,7 +579,7 @@ function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.remove('active');
-        document.body.style.overflow = 'auto'; // Unlock background scrolling
+        document.body.style.overflowY = ''; // Unlock background scrolling
     }
 }
 
