@@ -3133,6 +3133,26 @@ select:focus {
 
 /* Mobile viewports */
 @media (max-width: 768px) {
+    /* Prevent sideways page movement on touch devices. */
+    html,
+    body {
+        width: 100%;
+        overflow-x: clip;
+        overscroll-behavior-x: none;
+    }
+
+    .app-content {
+        overflow-x: clip;
+        touch-action: pan-y;
+    }
+
+    .container,
+    .gallery-grid,
+    .video-container-card,
+    .footer-container {
+        min-width: 0;
+    }
+
     /* Keep page content comfortably inset from phone edges. */
     .container {
         padding-left: 20px;
@@ -3336,6 +3356,28 @@ select:focus {
     .play-button-overlay svg {
         width: 38px;
         height: 38px;
+    }
+
+    .wa-toggle-btn {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .wa-chat-widget {
+        right: 16px;
+        bottom: 92px;
+        width: calc(100vw - 32px);
+        max-width: 320px;
+    }
+
+    .toast {
+        right: -320px;
+        width: calc(100vw - 32px);
+        max-width: 300px;
+    }
+
+    .toast.active {
+        right: 16px;
     }
 
     .cta-banner-card {
