@@ -8,81 +8,103 @@ const projectsData = {
         title: 'Swasthya Bharat Camps',
         category: 'Healthcare Services',
         badgeClass: 'tag-healthcare',
-        subtitle: 'Primary health camps in local schools & orphanages',
-        description: 'Our Swasthya Bharat initiative targets structural disparities in early pediatric and adolescent health checks. We organize diagnostic checkups, general physician consultations, eye health evaluations, and primary health advice in Bhopal and Sehore government schools. By catching conditions early, we ensure proper development and prevent long-term complications.',
+        subtitle: 'Community Health Camps',
+        description: 'Amiti Healthcare conducts structured health camps in collaboration with partners such as Shreedhi Milk, Mittal Group of Colleges and local schools in and around Bhopal and nearby districts.<br><br>These camps strengthen early detection, promote health‑seeking behaviour, and demonstrate a replicable model for preventive healthcare outreach.',
         outcomes: [
-            '50+ diagnostic camps organized every year',
-            'Over 30,000+ individuals provided with free prescription drugs',
-            'Sponsorship links established for 120+ pediatric surgical cases'
+            'Over 50 health check‑up camps organised with schools, colleges, workplaces and institutions',
+            'Camps held at educational institutes, milk factories, petrol pumps, orphanages, old age homes, and special needs centers',
+            'Process includes: Initial screening (Basic check-ups & baseline data) and Medical consultation (On-site partnering physicians)',
+            'Follow-up: Tracking of referred cases and post-camp data to monitor outcomes',
+            'Resource provision: Provision of essential aids such as corrective spectacles for those diagnosed with vision issues'
         ],
-        metric1Val: '500+',
-        metric1Lbl: 'Total Camps Run',
-        metric2Val: '15 Yrs',
-        metric2Lbl: 'Project Lifespan'
-    },
-    'mobile-clinic': {
-        title: 'Mobile Medical Clinic',
-        category: 'Healthcare Services',
-        badgeClass: 'tag-healthcare',
-        subtitle: 'Roving checkups in remote Sehore pockets',
-        description: 'For villages situated more than 15 kilometers away from any Primary Health Centre (PHC), seeking simple diagnostic checkups becomes a major economic cost. The Mobile Medical Clinic travels directly to these remote areas, staffed with a general doctor and a nurse. It provides checkups, distributes basic medicines, and carries diagnostic kits for sugar, malaria, and blood testing.',
-        outcomes: [
-            'Regular weekly coverage across 12 designated village clusters',
-            'Pre-natal and maternal nutrition counsel provided on-site',
-            'More than 12,000 rural residents served on-site with zero travels'
-        ],
-        metric1Val: '12',
-        metric1Lbl: 'Villages Served Weekly',
-        metric2Val: '12k+',
-        metric2Lbl: 'Beneficiaries Served'
-    },
-    'eye-camp': {
-        title: 'Vision & Eye Care Camps',
-        category: 'Healthcare Services',
-        badgeClass: 'tag-healthcare',
-        subtitle: 'Refraction checks, free spectacles, and cataract tie-ups',
-        description: 'Uncorrected refractive errors are a major reason for dropouts in local schools and loss of work productivity in urban slums. Our Eye Care Camps provide precise computerized refraction testing. We distribute high-quality custom glasses on-site and run screening for cataracts, which are then operated on at municipal partner hospitals.',
-        outcomes: [
-            '5,000+ children and adults screened for vision correction',
-            '1,200+ free custom prescription eyeglasses distributed',
-            '240+ cataract surgery referrals completed successfully'
-        ],
-        metric1Val: '5k+',
-        metric1Lbl: 'Vision Screenings',
-        metric2Val: '1,200+',
-        metric2Lbl: 'Spectacles Distributed'
-    },
-    'sarva-mangal-bhojan': {
-        title: 'Sarva Mangal Bhojan',
-        category: 'Nutrition & Dignity',
-        badgeClass: 'tag-nutrition',
-        subtitle: 'Daily nutritious meals at Cancer Hospital Bhopal',
-        description: 'For cancer patients traveling from rural towns to Bhopal, the costs of long chemotherapy schedules can deplete family savings. This often forces accompanying caretakers to compromise on food. Sarva Mangal Bhojan has run continuously for seven years, providing healthy, fresh daily lunches (consisting of wheat chapatis, pulses, rice, and fresh vegetables) prepared under hygienic standards.',
-        outcomes: [
-            'Continuous daily kitchen service for over 7 consecutive years',
-            'More than 200,000+ hot, nutritious meals served with respect',
-            'Direct dietary support to help chemotherapy patients maintain calorie counts'
-        ],
-        metric1Val: '7+ Yrs',
-        metric1Lbl: 'Continuous Operation',
-        metric2Val: '200k+',
-        metric2Lbl: 'Meals Served'
+        metric1Val: '50+',
+        metric1Lbl: 'Camps Organized',
+        metric2Val: 'Bhopal/Sehore',
+        metric2Lbl: 'Focus Districts'
     },
     'samman-campaign': {
         title: 'Samman Campaign',
-        category: 'Community Welfare',
+        category: 'Relief & Welfare',
         badgeClass: 'tag-community',
-        subtitle: 'Seasonal relief & winter clothing distribution',
-        description: 'Extreme weather presents high health hazards for families living in temporary brick-kiln structures and tribal hamlets. The Samman Campaign provides relief packages to address seasonal vulnerability. During winters, we distribute thick blankets, kids sweaters, footwear, and emergency dry rations. The distribution is audited and executed with the help of community volunteers.',
+        subtitle: 'Community Service and Relief',
+        description: 'The “Samman Campaign” responds to acute seasonal and economic vulnerabilities in Bhopal and Sehore.<br><br>The campaign combines immediate relief with community solidarity, especially during periods of harsh weather, economic distress and emergencies.',
         outcomes: [
-            '10,000+ seasonal relief packages distributed directly on-site',
-            'Thick warm sweaters provided to 3,500+ school-going children',
-            'Immediate relief kits deployed to affected families during river floods'
+            'Distribution of essential items such as food, clothing, footwear and winter wear to under‑resourced families and individuals',
+            'Community‑driven resource mobilisation, notably in partnership with Punjab Boot House and local citizens',
+            'Collaboration with women’s collective Sheroes, ensuring that women’s voices and priorities shape the design and delivery of support'
         ],
-        metric1Val: '10k+',
-        metric1Lbl: 'Kits Distributed',
-        metric2Val: '3.5k+',
-        metric2Lbl: 'Sweaters Given'
+        metric1Val: 'Punjab Boot',
+        metric1Lbl: 'Resource Partner',
+        metric2Val: 'Sheroes',
+        metric2Lbl: 'Mobilisation lead'
+    },
+    'covid-relief': {
+        title: 'COVID-19 Awareness & Education',
+        category: 'Healthcare Services',
+        badgeClass: 'tag-healthcare',
+        subtitle: ' grassroots behaviour-change and vaccine facilitation',
+        description: 'During the COVID‑19 pandemic, Amiti led comprehensive awareness and behaviour‑change efforts: improving health literacy and supporting government efforts to manage the pandemic at the last mile.',
+        outcomes: [
+            'Community sessions and workshops on mask usage, hand hygiene, respiratory etiquette and physical distancing',
+            'Information on symptom recognition, home‑based care, timely testing and referral',
+            'Facilitation of vaccination drives in partnership with local health authorities, helping to address misinformation and build trust in public health measures'
+        ],
+        metric1Val: 'NHM Aligned',
+        metric1Lbl: 'Health Framework',
+        metric2Val: 'Bhopal/Sehore',
+        metric2Lbl: 'Campaign Areas'
+    },
+    'sarva-mangal-bhojan': {
+        title: 'Sarva Mangal Bhojan Vitran Samiti',
+        category: 'Nutrition & Dignity',
+        badgeClass: 'tag-nutrition',
+        subtitle: 'Nutrition and Dignity',
+        description: 'For the past seven years, Amiti has run the Sarva Mangal Bhojan Vitran initiative at the Cancer Hospital in Bhopal.<br><br>The initiative reduces the economic and emotional burden on families already under stress and ensures that no one goes hungry while seeking life‑saving treatment.<br><br>This long‑term, volunteer‑ and donor‑supported intervention reflects Amiti’s commitment to combining healthcare with the basic human right to food.',
+        outcomes: [
+            'Nutritious, freshly prepared meals are regularly provided to cancer patients and their caregivers',
+            'Reduces the economic and emotional burden on rural families visiting Bhopal',
+            'Continuous operations for the past seven years at Cancer Hospital Bhopal'
+        ],
+        metric1Val: '7 Years',
+        metric1Lbl: 'Continuous Service',
+        metric2Val: 'Bhopal',
+        metric2Lbl: 'Hospital Location'
+    },
+    'menses-project': {
+        title: 'The MENSES Project',
+        category: 'Women Empowerment',
+        badgeClass: 'tag-women',
+        subtitle: 'Preventive Health for Women and Girls',
+        description: 'The MENSES Project is Amiti’s flagship upcoming initiative on women‑centred preventive healthcare, currently in the research and design phase.<br><br>Focus on menstrual health, reproductive health literacy, and overall well‑being of adolescent girls and women. Planned interventions include school‑ and community‑based sessions, counselling, linkages to public health services, and potential livelihood tie‑ins (e.g., production or distribution of menstrual hygiene products through women’s groups).<br><br>Strong alignment with SDG 3 (health) and SDG 5 (gender equality), and convergence possibilities with WCD and Health Ministry programmes around adolescent girls, maternal health and nutrition.',
+        outcomes: [
+            'Adolescent girl and reproductive health literacy focus',
+            'School- and community-based counselling and interactive sessions',
+            'Linkages to public primary health services',
+            'Livelihood tie-ins: potential production or distribution of hygiene products through women\'s groups',
+            'Convergence with WCD and Health Ministry programs'
+        ],
+        metric1Val: 'SDG 3 & 5',
+        metric1Lbl: 'Core Alignment',
+        metric2Val: 'Upcoming',
+        metric2Lbl: 'Project Phase'
+    },
+    'health-lab': {
+        title: 'The Health Lab',
+        category: 'Healthcare Services',
+        badgeClass: 'tag-healthcare',
+        subtitle: 'Interactive Preventive Healthcare Awareness',
+        description: 'The Health Lab is Amiti\'s flagship interactive community healthcare awareness programme designed to make preventive healthcare engaging, accessible and conversation-driven. Instead of traditional lecture-based sessions, the programme uses a mela-style (fair-style) format with activity stations, games, demonstrations and guided discussions.<br><br>Trained professionals, psychologists, and educators facilitate these sessions, creating a safe, inclusive and judgement-free space.',
+        outcomes: [
+            'Activity stations, games, and guided discussions focus on building health literacy around: Mental Health, Menstrual Health, Menopause, Nutrition & Lifestyle, and General Preventive Healthcare',
+            'School Edition: adolescent focus (puberty, menstrual health, emotional well-being, nutrition, body literacy, healthy habits)',
+            'Sports Edition: sports clubs/athletic focus (sports nutrition, mental resilience, menstrual health in athletes, injury prevention, body image)',
+            'Menopause Edition: midlife focus (menopause awareness, hormonal changes, mental health, nutrition, bone health, healthy ageing)',
+            'Interactive features: pre/post feedback, anonymous question corners, and take-home educational material'
+        ],
+        metric1Val: '3 Editions',
+        metric1Lbl: 'Target Cohorts',
+        metric2Val: 'Mela Format',
+        metric2Lbl: 'Delivery Mode'
     }
 };
 
@@ -163,6 +185,7 @@ function navigateTo(viewId, updateHash = true) {
         'home': 'home-view',
         'about': 'about-view',
         'programmes': 'programmes-view',
+        'projects': 'projects-view',
         'get-involved': 'get-involved-view',
         'contact': 'contact-view'
     };
@@ -206,9 +229,9 @@ function navigateTo(viewId, updateHash = true) {
     }
 }
 
-// Special link route to open the programmes view under a specific filter tab
+// Special link route to open the projects view under a specific filter tab
 function navigateToProgram(programCategory) {
-    navigateTo('programmes');
+    navigateTo('projects');
     const filterBtn = document.querySelector(`.filter-tab[data-filter="${programCategory}"]`);
     if (filterBtn) {
         filterBtn.click();
@@ -583,7 +606,7 @@ function openProjectDetails(projectKey) {
 
     document.getElementById('modal-project-title').innerText = data.title;
     document.getElementById('modal-project-subtitle').innerText = data.subtitle;
-    document.getElementById('modal-project-desc').innerText = data.description;
+    document.getElementById('modal-project-desc').innerHTML = data.description;
 
     // Populating outcomes
     const outcomesContainer = document.getElementById('modal-project-outcomes');
@@ -598,6 +621,22 @@ function openProjectDetails(projectKey) {
     document.getElementById('modal-metric-1-lbl').innerText = data.metric1Lbl;
     document.getElementById('modal-metric-2-val').innerText = data.metric2Val;
     document.getElementById('modal-metric-2-lbl').innerText = data.metric2Lbl;
+
+    // Customise CTA box contextually
+    const ctaBox = document.querySelector('#project-detail-modal .modal-cta-box');
+    if (ctaBox) {
+        if (projectKey === 'menses-project') {
+            ctaBox.innerHTML = `
+                <h4>Partner or Support</h4>
+                <button class="btn-primary btn-full" onclick="closeModal('project-detail-modal'); openModal('menses-modal')">Express Interest</button>
+            `;
+        } else {
+            ctaBox.innerHTML = `
+                <h4>Directly support this project</h4>
+                <button class="btn-primary btn-full" onclick="closeModal('project-detail-modal'); openModal('donate-modal')">Donate to this Project</button>
+            `;
+        }
+    }
 
     openModal('project-detail-modal');
 }
@@ -717,3 +756,26 @@ function simulateDownload(filename) {
         );
     }, 600);
 }
+// Internship Modal Form Submission Handler
+function handleInternshipModalSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById('int-name-modal').value;
+
+    closeModal('internship-detail-modal');
+    document.getElementById('internship-modal-form').reset();
+
+    triggerToast(
+        'Application Logged!', 
+        `Thank you ${name}. Your internship application has been successfully transmitted.`
+    );
+}
+
+// Toggle Floating WhatsApp Chat Widget
+function toggleWhatsAppChat() {
+    const widget = document.getElementById('whatsapp-chat-widget');
+    if (widget) {
+        widget.classList.toggle('active');
+    }
+}
+
+
