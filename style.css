@@ -3140,13 +3140,20 @@ select:focus {
     html,
     body {
         width: 100%;
-        overflow-x: clip;
+        max-width: 100%;
+        overflow-x: hidden !important;
         overscroll-behavior-x: none;
+        touch-action: pan-y;
     }
 
-    .app-content {
-        overflow-x: clip;
-        touch-action: pan-y;
+    .site-header,
+    .app-content,
+    .site-footer,
+    .page-view,
+    .modal-overlay {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .container,
