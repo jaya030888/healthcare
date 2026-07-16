@@ -186,6 +186,7 @@ function navigateTo(viewId, updateHash = true) {
         'about': 'about-view',
         'programmes': 'programmes-view',
         'projects': 'projects-view',
+        'gallery': 'gallery-view',
         'get-involved': 'get-involved-view',
         'contact': 'contact-view'
     };
@@ -216,7 +217,6 @@ function navigateTo(viewId, updateHash = true) {
             triggerStatsCounters();
         }
 
-        // Scroll to top
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

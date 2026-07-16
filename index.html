@@ -51,6 +51,7 @@
                     <li><a href="#about" class="nav-link" onclick="navigateTo('about')">About Us</a></li>
                     <li><a href="#programmes" class="nav-link" onclick="navigateTo('programmes')">Programmes</a></li>
                     <li><a href="#projects" class="nav-link" onclick="navigateTo('projects')">Projects</a></li>
+                    <li><a href="#gallery" class="nav-link" onclick="navigateTo('gallery')">Gallery</a></li>
                     <li><a href="#get-involved" class="nav-link" onclick="navigateTo('get-involved')">Get Involved</a>
                     </li>
                     <li><a href="#contact" class="nav-link" onclick="navigateTo('contact')">Contact</a></li>
@@ -573,7 +574,7 @@
             </section>
 
             <!-- Media Gallery Preview -->
-            <section class="gallery-section">
+            <section class="gallery-section" id="gallery-preview">
                 <div class="container">
                     <div class="section-header-centered">
                         <span class="section-tag">GALLERY</span>
@@ -596,6 +597,9 @@
                             <img src="images/community_program.png" alt="Volunteers in action">
                             <div class="gallery-caption">Winter Relief Drive</div>
                         </div>
+                    </div>
+                    <div class="gallery-view-all">
+                        <button class="btn-primary" onclick="navigateTo('gallery')">View Full Gallery &rarr;</button>
                     </div>
                 </div>
             </section>
@@ -643,7 +647,43 @@
         </section>
 
 
-        <!-- 2. ABOUT PAGE VIEW -->
+        <!-- 2. GALLERY PAGE VIEW -->
+        <section id="gallery-view" class="page-view gallery-page-view">
+            <div class="container page-content-container">
+                <div class="page-header gallery-page-header">
+                    <span class="section-tag">OUR GALLERY</span>
+                    <h1>Stories from the Field</h1>
+                    <p class="section-lead-subtitle">A closer look at the people, partnerships and everyday moments
+                        that shape Amiti's community work.</p>
+                </div>
+
+                <div class="gallery-grid full-gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/amiti_hero.png" alt="Amiti healthcare and community outreach">
+                        <div class="gallery-caption">Care Across Communities</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/healthcare_program.png" alt="School health camp checkups">
+                        <div class="gallery-caption">School Health Camp</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/women_program.png" alt="Women's health awareness session">
+                        <div class="gallery-caption">Women's Health Session</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/nutrition_program.png" alt="Community nutrition support">
+                        <div class="gallery-caption">Nutrition Support</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/community_program.png" alt="Community volunteers at work">
+                        <div class="gallery-caption">Volunteers in Action</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. ABOUT PAGE VIEW -->
         <section id="about-view" class="page-view">
             <div class="container page-content-container">
                 <div class="page-header">

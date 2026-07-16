@@ -1267,6 +1267,8 @@ img {
 /* Media Gallery */
 .gallery-section {
     padding: 100px 0;
+    background-color: #F7F1E8;
+    scroll-margin-top: 96px;
 }
 
 .gallery-grid {
@@ -1275,12 +1277,50 @@ img {
     gap: 20px;
 }
 
+.gallery-view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.gallery-page-view {
+    background-color: #F7F1E8;
+    min-height: calc(100vh - 85px);
+}
+
+.gallery-page-header {
+    text-align: center;
+}
+
+.gallery-page-header .section-lead-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
 .gallery-item {
     position: relative;
-    border-radius: var(--border-radius-md);
-    overflow: hidden;
+    padding: 12px 12px 42px;
+    background-color: #FFFEFA;
+    border-radius: 2px;
+    overflow: visible;
     aspect-ratio: 1;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 24px rgba(66, 48, 28, 0.18);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(4) {
+    transform: rotate(-2deg);
+}
+
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3) {
+    transform: rotate(2deg);
 }
 
 .gallery-item img {
@@ -1292,28 +1332,26 @@ img {
 }
 
 .gallery-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: static;
     width: 100%;
-    background: linear-gradient(to top, rgba(13, 35, 68, 0.8), transparent);
-    color: #FFFFFF;
-    padding: 20px 16px;
+    background: transparent;
+    color: var(--color-secondary);
+    padding: 12px 2px 0;
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.95rem;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: var(--transition-normal);
+    text-align: center;
+    opacity: 1;
+    transform: none;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 16px 30px rgba(66, 48, 28, 0.24);
 }
 
 .gallery-item:hover img {
-    transform: scale(1.08);
-}
-
-.gallery-item:hover .gallery-caption {
-    opacity: 1;
-    transform: translateY(0);
+    transform: scale(1.04);
 }
 
 /* ==========================================
@@ -3350,12 +3388,13 @@ select:focus {
 
     .gallery-item {
         aspect-ratio: 4 / 5;
+        transform: none !important;
     }
 
     .gallery-caption {
         opacity: 1;
         transform: none;
-        padding: 28px 12px 12px;
+        padding: 12px 2px 0;
         font-size: 0.85rem;
     }
 
