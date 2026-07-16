@@ -2525,7 +2525,6 @@ select:focus {
 .brand-col .logo-img {
     height: 40px;
     width: 40px;
-    filter: brightness(0) invert(1);
 }
 
 .footer-desc {
