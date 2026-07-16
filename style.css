@@ -3081,6 +3081,24 @@ select:focus {
         display: block;
     }
 
+    /* Hamburger Menu Toggle Animation */
+    .menu-toggle svg line {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform-origin: center;
+    }
+
+    .menu-toggle.active .line-top {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.active .line-mid {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .line-bot {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
     /* Responsive navbar */
     .main-nav {
         position: absolute;
@@ -3089,19 +3107,23 @@ select:focus {
         width: 100%;
         background-color: var(--bg-app);
         border-bottom: 1px solid var(--border-color);
-        padding: 20px 24px;
+        padding: 0 24px;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        visibility: hidden;
-        transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+        pointer-events: none;
+        transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                    padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         box-shadow: var(--shadow-lg);
+        z-index: 1000;
     }
 
     .main-nav.active {
         max-height: 480px;
         opacity: 1;
-        visibility: visible;
+        pointer-events: auto;
+        padding: 20px 24px;
     }
 
     .mobile-nav-actions {
