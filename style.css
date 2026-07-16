@@ -1393,7 +1393,7 @@ img {
 }
 
 .video-thumbnail-placeholder {
-    background-image: linear-gradient(rgba(13, 35, 68, 0.4), rgba(13, 35, 68, 0.4)), url('images/amiti_hero.png');
+    background-image: linear-gradient(rgba(13, 35, 68, 0.4), rgba(13, 35, 68, 0.4)), url('asset/amiti_hero.png');
     background-size: cover;
     background-position: center;
     position: relative;
