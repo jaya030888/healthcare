@@ -3168,7 +3168,6 @@ select:focus {
         touch-action: pan-y;
     }
 
-    .site-header,
     .app-content,
     .site-footer,
     .page-view,
@@ -3176,6 +3175,12 @@ select:focus {
         width: 100%;
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+    /* The mobile navigation is positioned below the fixed header, so the
+       header must not clip the open dropdown. */
+    .site-header {
+        overflow: visible;
     }
 
     .container,
