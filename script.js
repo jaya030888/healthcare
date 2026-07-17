@@ -502,60 +502,6 @@ function openQuickDonationPayment() {
     }
 }
 
-// Simulated Video Documentary Player
-function initVideoPlayer() {
-    const player = document.querySelector('.simulated-video-player');
-    const playBtn = document.querySelector('.video-play-btn');
-    const playBar = document.querySelector('.video-progress-filled');
-    const timeIndicator = document.querySelector('.video-time-indicator');
-
-    if (player && playBtn) {
-        let isPlaying = false;
-        let timer;
-        let progressVal = 35;
-        let seconds = 88; // 1:28 of 4:12
-
-        player.addEventListener('click', togglePlay);
-        playBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            togglePlay();
-        });
-
-        function togglePlay() {
-            isPlaying = !isPlaying;
-            if (isPlaying) {
-                playBtn.innerHTML = `
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <rect x="6" y="4" width="4" height="16"></rect>
-                        <rect x="14" y="4" width="4" height="16"></rect>
-                    </svg>
-                `;
-                timer = setInterval(() => {
-                    seconds++;
-                    if (seconds >= 252) { // 4:12 is 252s
-                        clearInterval(timer);
-                        isPlaying = false;
-                        seconds = 0;
-                        progressVal = 0;
-                    }
-                    progressVal = (seconds / 252) * 100;
-                    playBar.style.width = `${progressVal}%`;
-                    
-                    const min = Math.floor(seconds / 60);
-                    const sec = seconds % 60;
-                    timeIndicator.innerText = `${min}:${sec < 10 ? '0' + sec : sec} / 4:12`;
-                }, 1000);
-            } else {
-                playBtn.innerHTML = `
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                `;
-                clearInterval(timer);
-            }
-        }
-    }
-}
 
 /* ==========================================
    MODAL DIALOG OPERATIONS
