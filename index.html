@@ -615,12 +615,12 @@
                                 lives impacted through grassroots preventive health camps.</p>
                             <button class="btn-primary" onclick="openModal('video-modal')">Play Documentary</button>
                         </div>
-                        <div class="video-thumbnail-placeholder" onclick="openModal('video-modal')">
-                            <div class="play-button-overlay">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                </svg>
-                            </div>
+                        <div class="video-thumbnail-placeholder">
+                            <video class="documentary-video" controls preload="metadata"
+                                poster="asset/team.webp">
+                                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -1243,7 +1243,7 @@
                     <div class="team-grid">
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">DK</span>
+                                <img src="images/dr. siddharth kimtee_.jpg" alt="Dr. Siddharth Kimtee">
                             </div>
                             <h4>Dr. Siddharth Kimtee</h4>
                             <span class="team-role">President</span>
@@ -1252,7 +1252,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">IJ</span>
+                                <img src="images/Ishaan Jain.jpg" alt="Ishaan Jain">
                             </div>
                             <h4>Ishaan Jain</h4>
                             <span class="team-role">Vice President</span>
@@ -1260,7 +1260,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">AG</span>
+                                <img src="images/ankur gupta.jpg" alt="Ankur Gupta">
                             </div>
                             <h4>Ankur Gupta</h4>
                             <span class="team-role">Secretary</span>
@@ -1269,7 +1269,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">KG</span>
+                                <img src="images/Khushi Gupta.jpg" alt="Khushi Gupta">
                             </div>
                             <h4>Khushi Gupta</h4>
                             <span class="team-role">Joint Secretary</span>
@@ -1278,7 +1278,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">IK</span>
+                                <img src="images/ishani kimtee.jpg" alt="Ishani Kimtee">
                             </div>
                             <h4>Ishani Kimtee</h4>
                             <span class="team-role">Treasurer</span>
@@ -1287,7 +1287,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">NC</span>
+                                <img src="images/Nitesh choradia.jpg" alt="Nitesh Choradia">
                             </div>
                             <h4>Nitesh Choradia</h4>
                             <span class="team-role">Member</span>
@@ -1295,7 +1295,7 @@
                         </div>
                         <div class="team-card">
                             <div class="team-avatar">
-                                <span class="avatar-placeholder">SB</span>
+                                <img src="images/Dr. Shivam Bhandari.jpg" alt="Dr. Shivam Bhandari">
                             </div>
                             <h4>Dr. Shivam Bhandari</h4>
                             <span class="team-role">Member</span>
@@ -2483,24 +2483,11 @@
         <div class="modal-content modal-video-width">
             <button class="modal-close white-close" onclick="closeModal('video-modal')">&times;</button>
             <div class="modal-body video-modal-body">
-                <!-- Clean interactive video simulator representing documentary -->
-                <div class="simulated-video-player">
-                    <div class="video-overlay-details">
-                        <h4>Amiti Social Welfare Society - 15 Year Retrospective</h4>
-                        <p>A short film on healthcare with dignity in Bhopal and Sehore.</p>
-                    </div>
-                    <div class="video-control-center">
-                        <span class="video-time-indicator">0:00 / 4:12</span>
-                        <div class="video-play-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                        </div>
-                        <div class="video-progress-line">
-                            <div class="video-progress-filled"></div>
-                        </div>
-                    </div>
-                </div>
+                <video class="documentary-video documentary-video-modal" controls autoplay preload="metadata"
+                    poster="asset/team.webp">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>

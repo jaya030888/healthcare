@@ -504,13 +504,6 @@ function openQuickDonationPayment() {
 
 // Simulated Video Documentary Player
 function initVideoPlayer() {
-    const videoPlaceholder = document.querySelector('.video-thumbnail-placeholder');
-    if (videoPlaceholder) {
-        videoPlaceholder.addEventListener('click', () => {
-            openModal('video-modal');
-        });
-    }
-
     const player = document.querySelector('.simulated-video-player');
     const playBtn = document.querySelector('.video-play-btn');
     const playBar = document.querySelector('.video-progress-filled');
