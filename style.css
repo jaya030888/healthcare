@@ -571,10 +571,16 @@ img {
 }
 
 /* Hero Visuals */
+.hero-visual-content {
+    align-self: start;
+}
+
 .hero-img-wrapper {
     position: relative;
     /* Keep the visual level with the first line of the main heading, below the location badge. */
     margin-top: 86px;
+    width: 108%;
+    margin-left: -4%;
 }
 
 .hero-main-img {
@@ -3024,6 +3030,8 @@ select:focus {
 
     .hero-img-wrapper {
         margin-top: 0;
+        width: 100%;
+        margin-left: 0;
     }
 
     .hero-text-content {
